@@ -53,6 +53,17 @@ export default defineConfig([
   npm run build
   ```
 
+  ## Netlify Deploy
+
+  This project includes Netlify SPA routing support so browser refreshes on login, register, and dashboard pages do not 404.
+
+  Deploy settings:
+
+  - Build command: `npm run build`
+  - Publish directory: `dist`
+
+  The redirect is configured in [netlify.toml](netlify.toml) and [public/_redirects](public/_redirects).
+
   ## Notes
 
   - `.env` files are ignored by git.
